@@ -13,7 +13,7 @@ project = google.auth.default()[1]
 topic = "projects/{}/topics/forex-topic".format(project)
 # BigQuery table & schema
 table = "{}:forex_dataset.chfeur_daily".format(project)
-schema = "date:string,eur:float" # Faire attention à respecter le nom des colonnes avec ceux en input dans le topic
+schema = "date:string,eur:float" # !! Faire attention à respecter le nom des colonnes avec ceux en input dans le topic !!
 # Cloud Storage bucket
 bucket = "gs://forex_api_bucket"
 
