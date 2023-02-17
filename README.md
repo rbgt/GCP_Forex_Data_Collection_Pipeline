@@ -7,3 +7,5 @@ We have the following component :
 - An ETL Apache Beam script to subscribe to our PubSub topic, transforming the data and sinking it to a BigQuery Datawarehouse (i.e. forex-pubsub-subscriber.py which is in an Apache Beam Jupyter Notebook)
 - A BigQuery datawarehouse preparing views for Data visualization
 - A Data visualization tool with Looker Studio
+
+The Dockerfile containerize our application in an Image to collect the data from the Forex API and publishing it to PubSub
