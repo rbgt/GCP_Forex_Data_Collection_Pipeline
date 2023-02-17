@@ -14,3 +14,10 @@ The Dockerfile containerize our application in an Image to collect the data from
 This pipeline is scheduled to collect the data daily from the free API : https://github.com/fawazahmed0/currency-api#readme
 
 Credits to **![ fawazahmed0 ](https://github.com/fawazahmed0)** for this free API which made this project possible.
+
+Main points to create the containerized app on GCP : 
+1. Test the API with a Python Script 
+2. Create the Flask API and use gunicorn WSGI
+3. Containerize the API and make sure it listens to port 8080 on host 0.0.0.0
+4. Build the image, tag it with the "gcr.io/(projectID)/(image name)"
+5. Push the tagged image (goes automatically to the GCP Container registry)
