@@ -8,7 +8,9 @@ We have the following component :
 - A BigQuery datawarehouse preparing views for Data visualization
 - A Data visualization tool with Looker Studio
 ![alt text](https://github.com/rbgt/GCP_forex_data_collect_pipeline/blob/main/gcp_daily_collect_pipeline.png)
+
 The Dockerfile containerize our application in an Image to collect the data from the Forex API and publishing it to PubSub
 
 This pipeline is scheduled to collect the data daily from the free API : https://github.com/fawazahmed0/currency-api#readme
+
 Credits to fawazahmed0 for this free API which made thisp project possible.
