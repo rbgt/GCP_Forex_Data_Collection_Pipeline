@@ -1,4 +1,4 @@
-# GCP forex data collect pipeline
+# GCP Forex Data Collection Pipeline
 In this project we implement a Data collection pipeline in GCP collecting forex data on the CHF/EUR pair
 We have the following component :
 - A Cloud Scheduler triggering the pipeline every day though an HTTP GET request
